@@ -14,7 +14,7 @@ class BaseRobot:
         self.weight = weight
         self.coords = coords if coords else [0, 0]
 
-    def get_info(self):
+    def get_info(self) -> str:
         return f"Robot: {self.name}, Weight: {self.weight}"
 
     def go_forward(self, step: int = 1) -> None:
